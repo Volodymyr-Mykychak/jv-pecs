@@ -3,8 +3,16 @@ package core.mate.academy.service;
 import core.mate.academy.model.Bulldozer;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Клас `BulldozerProducer` є виробником бульдозерів. Він реалізує інтерфейс `MachineProducer`,
+ * що визначає метод `get()`, який повертає список бульдозерів.
+ */
 public class BulldozerProducer implements MachineProducer<Bulldozer> {
+    /**
+     * Отримує список бульдозерів.
+     *
+     * @return список бульдозерів
+     */
     @Override
     public List<Bulldozer> get() {
         List<Bulldozer> bulldozers = new ArrayList<>();
